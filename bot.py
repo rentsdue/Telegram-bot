@@ -9,6 +9,7 @@ load_dotenv()
 # Get the TOKEN from environment variables
 TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
 
+#Command that says hello to the user
 async def hello(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text(f'Hello {update.effective_user.first_name}')
 
