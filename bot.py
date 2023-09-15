@@ -26,7 +26,5 @@ app = ApplicationBuilder().token(TOKEN).build()
 app.add_handler(CommandHandler("hello", hello))
 app.add_handler(CommandHandler('help', help))
 app.add_handler(CommandHandler('about', about))
-app.add_handler(CommandHandler('sentencereverse', sentencereverse))
-app.add_handler(CommandHandler('wordreverse', wordreverse))
 
 app.run_polling()
